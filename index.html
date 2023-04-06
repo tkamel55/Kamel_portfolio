@@ -1,224 +1,230 @@
-
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" type="image/png" href="./images/k.png" />
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" type="image/png" href="./images/k.png" />
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!-- Put your site title here -->
+        <title>
+            Kamel Mohamed | A Web and Mobile App Developer.
+        </title>
 
+        <link rel="stylesheet" href="./css/styles.css" />
 
-  <!-- Put your site title here -->
-  <title>
-    Kamel Mohamed | A Web and Mobile App Developer.
-  </title>
+        <style>
+            .header {
+                background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(./images/header.jpg);
+                height: 100vh;
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+                font-size: var(--font-size-normal);
+            }
 
-  <link rel="stylesheet" href="./css/styles.css" />
+            @font-face {
+                font-family: "Hk Grotesk";
+                font-style: normal;
+                font-weight: 400;
+                src: url("./fonts/HKGrotesk-Regular.woff") format("woff");
+            }
 
-  <style>
-  .header {
-    background: linear-gradient(rgba(0,0,0,.9),rgba(0,0,0,.9)),url(./images/header.jpg);
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    font-size: var(--font-size-normal);
-}
+            @font-face {
+                font-family: "Jost";
+                font-style: normal;
+                font-weight: 400;
+                src: url("./fonts/Jost-Regular.ttf") format("woff");
+            }
+        </style>
+    </head>
 
-@font-face {
-    font-family: 'Hk Grotesk';
-    font-style: normal;
-    font-weight: 400;
-    src: url('./fonts/HKGrotesk-Regular.woff') format('woff');
-}
+    <body>
+        <!-- ***** Header ***** -->
 
-@font-face {
-    font-family: 'Jost';
-    font-style: normal;
-    font-weight: 400;
-    src: url('./fonts/Jost-Regular.ttf') format('woff');
-}
-
-  </style>
-</head>
-
-<body>
-
-  <!-- ***** Header ***** -->
-
-  <header class="header" role="banner" id="top">
-    <div class="row">
-      <nav class="nav" role="navigation">
-        <ul class="nav__items">
-          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-        <!--  <li class="nav__item"><a href="#clients" class="nav__link">Clients</a></li>-->
-          <li class="nav__item">
-            <a href="#about" class="nav__link">About</a>
-          </li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-    <div class="header__text-box row">
-      <div class="header__text">
-        <h1 class="heading-primary">
-          <!-- Replace the following name with your name -->
-          <span>Kamel Mohamed</span>
-        </h1>
-        <!-- Put a small paragraph about yourselfs -->
-        <p>A Web and Mobile App Developer.</p>
-        <a href="#contact" class="btn btn--pink">Get in touch</a>
-      </div>
-    </div>
-  </header>
-
-  <main role="main">
-
-    <!-- ***** Work ***** -->
-
-    <section class="work" id="work">
-      <div class="row">
-        <h2>My Work</h2>
-        <div class="work__boxes">
-
-          <!-- Each div with the work__box class is a project. -->
-          
-          <div class="work__box" data-aos="fade-left">
-            <div class="work__text">
-              <h3>E-learning System</h3>
-              <p>
-                It is simple E-learning App where teacher can use it to teach students any topics they want. 
-              </p>
-              <ul class="work__list">
-                <li>Android Studio.</li>
-                <li>Backend: Firebase.</li>
-               
-              </ul>
-
-              <div class="work__links">
-                <a href="https://drive.google.com/file/d/17vZmR_vk-tg9yVCMgZhL5kaWUKItHoWJ/view?usp=sharing" class="link__text">
-                  Video Demo <span>&rarr;</span>
-                </a>
-                <a href="https://github.com/tkamel55/Project">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                </a>
-              </div>
+        <header class="header" role="banner" id="top">
+            <div class="row">
+                <nav class="nav" role="navigation">
+                    <ul class="nav__items">
+                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                        <!--  <li class="nav__item"><a href="#clients" class="nav__link">Clients</a></li>-->
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">About</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-            <div class="work__image-box">
-              <img src="./images/Untitled-1.jpg" class="work__image" alt="Project 1" />
+            <div class="header__text-box row">
+                <div class="header__text">
+                    <h1 class="heading-primary">
+                        <!-- Replace the following name with your name -->
+                        <span>Kamel Mohamed</span>
+                    </h1>
+                    <!-- Put a small paragraph about yourselfs -->
+                    <p>A Web and Mobile App Developer.</p>
+                    <a href="#contact" class="btn btn--pink">Get in touch</a>
+                </div>
             </div>
-          </div>
+        </header>
 
+        <main role="main">
+            <!-- ***** Work ***** -->
 
-          <div class="work__box"  data-aos="flip-right">
-            <div class="work__text">
-              <h3>Health App</h3>
-              <p>
-                It is a fitness app which you can use to compete with your friend.
-              </p>
-              <ul class="work__list">
-                <li>Android Studio.</li>
-                <li>Backend: Firebase.</li>
-               
-              </ul>
+            <section class="work" id="work">
+                <div class="row">
+                    <h2>My Work</h2>
+                    <div class="work__boxes">
+                        <!-- Each div with the work__box class is a project. -->
 
-              <div class="work__links">
-                <a href="https://drive.google.com/file/d/11_7MSXqkJksxw3hik_c2y9yo41wk0eiT/view?usp=sharing" class="link__text">
-                  Video Demo <span>&rarr;</span>
-                </a>
-                <a href="https://github.com/tkamel55/Android_Project">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                </a>
-              </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/Healthcare-Mobile-Apps.jpg" class="work__image" alt="Project 1" />
-            </div>
-          </div>
+                        <div class="work__box" data-aos="flip-left">
+                            <div class="work__text">
+                                <h3>Omura Property Website</h3>
+                                <p>
+                                    A Website which i made which can helps us find properties to rent in Hong Kong.
+                                </p>
+                                <ul class="work__list">
+                                    <li>Html and Css</li>
+                                    <li>Jquery</li>
+                                    <li>JavaScript</li>
+                                    <li>Wordpress</li>
+                                    <li>Elementor</li>
+                                    <li>PHP</li>
+                                </ul>
 
-
-          <div class="work__box"  data-aos="flip-left">
-            <div class="work__text">
-              <h3>Restaurant App UI Concept</h3>
-              <p>
-                An College Assignment, Restaurant UI concept. 
-              </p>
-              <ul class="work__list">
-                <li>Made with Figma.</li>
-               
-              </ul>
-      
-            </div>
-            <div class="work__image-box">
-              <img src="./images/restaurant.PNG" class="work__image" alt="Project 1" />
-            </div>
-          </div>
-
-          <div class="work__box"  data-aos="flip-right">
-            <div class="work__text">
-              <h3>Online Book Shopping Website</h3>
-              <p>
-                A website project which can be used for selling books.
-              </p>
-              <ul class="work__list">
-                <li>Html and Css</li>
-                <li>Bootstrap</li>
-                <li>Node</li>
-                <li>Angular</li>
-                <li>MongoDB</li>
-              </ul>
-
-              <div class="work__links">
-                <a href="https://drive.google.com/file/d/1jqdnx1SSpB95mjFj1eAq6JQ06yOi1aG4/view?usp=sharing" class="link__text">
-                  Video Demo <span>&rarr;</span>
-                </a>
-                <a href="https://github.com/tkamel55/Web_Assignment-Front-end">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                </a>
-              </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/Book web.png" class="work__image" alt="Project 1" />
-            </div>
-          </div>
-
-          <div class="work__box"  data-aos="flip-left">
-            <div class="work__text">
-              <h3>Ecooter Website</h3>
-              <p>
-                An Electric Scooter company website made for a client.
-              </p>
-              <ul class="work__list">
-                <li>Html and Css</li>
-                <li>Jquery </li>
-                <li>JavaScript</li>
-                <li>Bootstrap</li>
-              </ul>
-
-              <div class="work__links">
-                <a href="https://www.ecooter-hk.com/" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <!-- <a href="#">
+                                <div class="work__links">
+                                    <a href="https://www.omuraproperty.com/en/" class="link__text"> Visit Site <span>&rarr;</span> </a>
+                                    <!-- <a href="#">
                   <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
                 </a> -->
-              </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/Ecooter.PNG" class="work__image" alt="Project 3" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+                                </div>
+                            </div>
+                            <div class="work__image-box">
+                                <img src="./images/omura.PNG" class="work__image" alt="Project 3" />
+                            </div>
+                        </div>
 
-    <!-- ***** Clients ***** -->
+                        <div class="work__box" data-aos="flip-left">
+                            <div class="work__text">
+                                <h3>Ecooter Website</h3>
+                                <p>
+                                    An Electric Scooter company website made for a client.
+                                </p>
+                                <ul class="work__list">
+                                    <li>Html and Css</li>
+                                    <li>Jquery</li>
+                                    <li>JavaScript</li>
+                                    <li>Bootstrap</li>
+                                </ul>
 
-  <!--  <section class="client" id="clients">
+                                <div class="work__links">
+                                    <a href="https://www.ecooter-hk.com/" class="link__text"> Visit Site <span>&rarr;</span> </a>
+                                    <!-- <a href="#">
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a> -->
+                                </div>
+                            </div>
+                            <div class="work__image-box">
+                                <img src="./images/Ecooter.PNG" class="work__image" alt="Project 3" />
+                            </div>
+                        </div>
+
+                        <div class="work__box" data-aos="flip-left">
+                            <div class="work__text">
+                                <h3>Restaurant App UI Concept</h3>
+                                <p>
+                                    An College Assignment, Restaurant UI concept.
+                                </p>
+                                <ul class="work__list">
+                                    <li>Made with Figma.</li>
+                                </ul>
+                            </div>
+                            <div class="work__image-box">
+                                <img src="./images/restaurant.PNG" class="work__image" alt="Project 1" />
+                            </div>
+                        </div>
+
+                        <div class="work__box" data-aos="fade-left">
+                            <div class="work__text">
+                                <h3>E-learning System</h3>
+                                <p>
+                                    It is simple E-learning App where teacher can use it to teach students any topics they want.
+                                </p>
+                                <ul class="work__list">
+                                    <li>Android Studio.</li>
+                                    <li>Backend: Firebase.</li>
+                                </ul>
+
+                                <div class="work__links">
+                                    <a href="https://drive.google.com/file/d/17vZmR_vk-tg9yVCMgZhL5kaWUKItHoWJ/view?usp=sharing" class="link__text"> Video Demo <span>&rarr;</span> </a>
+                                    <a href="https://github.com/tkamel55/Project">
+                                        <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub" />
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="work__image-box">
+                                <img src="./images/Untitled-1.jpg" class="work__image" alt="Project 1" />
+                            </div>
+                        </div>
+
+                        <div class="work__box" data-aos="flip-right">
+                            <div class="work__text">
+                                <h3>Health App</h3>
+                                <p>
+                                    It is a fitness app which you can use to compete with your friend.
+                                </p>
+                                <ul class="work__list">
+                                    <li>Android Studio.</li>
+                                    <li>Backend: Firebase.</li>
+                                </ul>
+
+                                <div class="work__links">
+                                    <a href="https://drive.google.com/file/d/11_7MSXqkJksxw3hik_c2y9yo41wk0eiT/view?usp=sharing" class="link__text"> Video Demo <span>&rarr;</span> </a>
+                                    <a href="https://github.com/tkamel55/Android_Project">
+                                        <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub" />
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="work__image-box">
+                                <img src="./images/Healthcare-Mobile-Apps.jpg" class="work__image" alt="Project 1" />
+                            </div>
+                        </div>
+
+                        <div class="work__box" data-aos="flip-right">
+                            <div class="work__text">
+                                <h3>Online Book Shopping Website</h3>
+                                <p>
+                                    A website project which can be used for selling books.
+                                </p>
+                                <ul class="work__list">
+                                    <li>Html and Css</li>
+                                    <li>Bootstrap</li>
+                                    <li>Node</li>
+                                    <li>Angular</li>
+                                    <li>MongoDB</li>
+                                </ul>
+
+                                <div class="work__links">
+                                    <a href="https://drive.google.com/file/d/1jqdnx1SSpB95mjFj1eAq6JQ06yOi1aG4/view?usp=sharing" class="link__text"> Video Demo <span>&rarr;</span> </a>
+                                    <a href="https://github.com/tkamel55/Web_Assignment-Front-end">
+                                        <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub" />
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="work__image-box">
+                                <img src="./images/Book web.png" class="work__image" alt="Project 1" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ***** Clients ***** -->
+
+            <!--  <section class="client" id="clients">
       <div class="row">
         <h2>Clients</h2>
         <div class="client__logos">
@@ -234,85 +240,80 @@
     </section>
 	-->
 
-    <!-- ***** About ***** -->
+            <!-- ***** About ***** -->
 
-    <section class="about" id="about">
-      <div class="row"  data-aos="flip-down">
-        <h2>About Me</h2>
-        <div class="about__content">
-          <div class="about__text">
-            <!-- Replace the below paragraph with info about yourself -->
-            <p>
-              A recent IT graduate with an honour degree from the University of Coventry in UK, looking to secure a Graduate IT support position, Mobile Application Developer or any other IT jobs that can utilise my current analytical skills and knowledge. Also, help me to further develop these skills in a practical and fast-paced environment. 
+            <section class="about" id="about">
+                <div class="row" data-aos="flip-down">
+                    <h2>About Me</h2>
+                    <div class="about__content">
+                        <div class="about__text">
+                            <!-- Replace the below paragraph with info about yourself -->
+                            <p>
+                                A recent IT graduate with an honour degree from the University of Coventry in UK, looking to secure a Graduate IT support position, Mobile Application Developer or any other IT jobs that can utilise my
+                                current analytical skills and knowledge. Also, help me to further develop these skills in a practical and fast-paced environment.
 
-              <br> <br>
+                                <br />
+                                <br />
 
-              My eventual career goal is to gain experience in the field of IT and become an app developer or UI and UX designer. Also, my dream is to work in any position that is related to IT.
-            </p>
-            <!-- Provide a link to your resume -->
-            <a href="https://drive.google.com/file/d/1EcHRY-L6OyEr9xw8H-Dx4sRtawa51F0A/view?usp=sharing" class="btn">My Resume</a>
-          </div>
+                                My eventual career goal is to gain experience in the field of IT and become an app developer or UI and UX designer. Also, my dream is to work in any position that is related to IT.
+                            </p>
+                            <!-- Provide a link to your resume -->
+                            <a href="https://drive.google.com/file/d/1EcHRY-L6OyEr9xw8H-Dx4sRtawa51F0A/view?usp=sharing" class="btn">My Resume</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
 
-        </div>
-      </div>
-    </section>
-  </main>
+        <!-- ***** Contact ***** -->
 
-  <!-- ***** Contact ***** -->
+        <section class="contact" id="contact">
+            <div class="row" data-aos="zoom-in">
+                <h2>Get in Touch</h2>
+                <div class="contact__info">
+                    <p>
+                        Are you looking for a fast-performing and user-friendly website to represent your product or business? or looking for any kind of consultation? or want to ask questions? or have some advice for me or just want to say
+                        "Hi 👋" in any case feel free to Let me know. I will do my best to respond back. 😊 The quickest way to reach out to me is via an email.
+                    </p>
+                    <!-- Replace the email with yours -->
+                    <a href="mailto:mohamedkamel.tt@gmail.com" class="btn">mohamedkamel.tt@gmail.com</a>
+                </div>
+            </div>
+        </section>
 
-  <section class="contact" id="contact">
-    <div class="row"  data-aos="zoom-in">
-      <h2>Get in Touch</h2>
-      <div class="contact__info">
-        <p>
-          Are you looking for a fast-performing and user-friendly website to
-          represent your product or business? or looking for any kind of
-          consultation? or want to ask questions? or have some advice for me
-          or just want to say "Hi 👋" in any case feel free to Let me know. I
-          will do my best to respond back. 😊 The quickest way to reach out to
-          me is via an email.
-        </p>
-        <!-- Replace the email with yours -->
-        <a href="mailto:mohamedkamel.tt@gmail.com" class="btn">mohamedkamel.tt@gmail.com</a>
-      </div>
-    </div>
-  </section>
+        <!-- ***** Footer ***** -->
 
-  <!-- ***** Footer ***** -->
+        <footer role="contentinfo" class="footer">
+            <div class="row">
+                <!-- Update the links to point to your accounts -->
+                <ul class="footer__social-links">
+                    <li class="footer__social-link-item">
+                        <a href="#" title="Link to Twitter Profile">
+                            <img src="./images/twitter.svg" class="footer__social-image" alt="Twitter" />
+                        </a>
+                    </li>
+                    <li class="footer__social-link-item">
+                        <a href="https://github.com/tkamel55" title="Link to Github Profile">
+                            <img src="./images/github.svg" class="footer__social-image" alt="Github" />
+                        </a>
+                    </li>
 
-  <footer role="contentinfo" class="footer">
-    <div class="row">
-      <!-- Update the links to point to your accounts -->
-      <ul class="footer__social-links">
-        <li class="footer__social-link-item">
-          <a href="#" title="Link to Twitter Profile">
-            <img src="./images/twitter.svg" class="footer__social-image" alt="Twitter">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href="https://github.com/tkamel55" title="Link to Github Profile">
-            <img src="./images/github.svg" class="footer__social-image" alt="Github">
-          </a>
-        </li>
-  
-        <li class="footer__social-link-item">
-          <a href="#">
-            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
-          </a>
-        </li>
-      </ul>
+                    <li class="footer__social-link-item">
+                        <a href="#">
+                            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin" />
+                        </a>
+                    </li>
+                </ul>
 
-    
-      <p>
-		Copyright © 2020. All rights reserved worldwide - Designed by Kamel Mohamed.
-      </p>
- 
-  </footer>
+                <p>
+                    Copyright © 2020. All rights reserved worldwide - Designed by Kamel Mohamed.
+                </p>
 
-  <a href="#top" class="back-to-top" title="Back to Top">
-    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
-  </a>
-  <script src="./js/index.js"></script>
-</body>
-
+                <a href="#top" class="back-to-top" title="Back to Top">
+                    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image" />
+                </a>
+                <script src="./js/index.js"></script>
+            </div>
+        </footer>
+    </body>
 </html>
